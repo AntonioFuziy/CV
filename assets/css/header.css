@@ -1,0 +1,67 @@
+body{
+    background-color: rgb(21, 32, 43);
+}
+
+header#main-header{
+    margin-top: 10px;
+    width: 90%;
+    height: 60px;
+    display: flex;
+    color: #fafafa;
+    font-size: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    justify-content: space-around;
+}
+
+h1{
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
+.perfil{
+    text-align: center;
+    margin-right: 50px;
+    text-decoration: none;
+    color: rgb(21, 32, 43);
+}
+
+.button-header{
+    text-align: center;
+    margin-right: 50px;
+    text-decoration: none;
+    color: #fafafa;
+}
+
+.button-header:hover{
+    animation: fadeHoverText 0.8s forwards;
+}
+
+.perfil:hover{
+    animation: fadeHoverText 0.8s forwards;
+}
+
+.foto-perfil{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: solid;
+}
+
+@keyframes fadeHoverText{
+    from{
+        border-color: rgb(21, 32, 43);
+    }
+
+    to{
+        border-color: rgba(29,161,242,1.00);
+        color: rgba(29,161,242,1.00);
+    }
+}
+
+
+@media (max-width: 700px){
+    header#main-header{
+        display: none;
+    }
+}

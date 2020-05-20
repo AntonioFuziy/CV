@@ -1,0 +1,80 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+}
+
+section{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+    background-color: rgba(29, 161, 242, 0.08);
+}
+
+.grid-content{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 70px;
+}
+
+.others{
+    color: #fafafa;
+    width: 0px;
+    height: 0px;
+}
+
+.others:hover{
+    animation: fadeHoverText, 0.8s, forwards;
+}
+
+.box{
+    width: 300px;
+    height: 200px;
+    background-color: #f7f7f7;
+    border-radius: 3px;
+    border-color: rgba(21, 32, 43, 0.08);
+    border-width: 3px;
+    border-style: solid;
+    text-align: center;
+    box-shadow: 7px 7px 20px 0px rgba(29, 161, 242, 0.2);
+}
+
+.box-title{
+    margin-top: 5px;
+    font-family: "Archivo", sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+@keyframes fadeHoverText{
+    from{
+        color: #fafafa;
+    }
+
+    to{
+        color: rgba(29, 161, 242, 1);
+    }
+}
+
+
+@media (max-width: 1120px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    section{
+        display: block;
+    }
+
+    .programacao{
+        text-align: center;
+    }
+    
+    .grid-content{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+}

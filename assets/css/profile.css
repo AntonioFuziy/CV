@@ -1,0 +1,133 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+}
+
+section{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+    background-color: rgba(29, 161, 242, 0.08);
+}
+
+.profile{
+    color: #fafafa;
+    width: 0px;
+    height: 0px;
+}
+
+.profile-img:hover{
+    animation: fadeBorder 0.8s forwards;
+}
+
+.grid-content{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 70px;
+}
+
+.box{
+    width: 300px;
+    height: 200px;
+    background-color: #f7f7f7;
+    border-radius: 3px;
+    border-color: rgba(21, 32, 43, 0.08);
+    border-width: 3px;
+    border-style: solid;
+    box-shadow: 7px 7px 20px 0px rgba(29, 161, 242, 0.2);
+}
+
+.profile-text-title{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: 1000;
+    color: #f7f7f7;
+}
+
+.profile-text-title:hover{
+    animation: fadeHoverText 0.8s forwards;
+}
+
+.profile-text{
+    color: #61dafb;
+    margin-top: 10px;
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.links-profile{
+  color: #61dafb;
+}
+
+.links-profile:hover{
+    animation: fadeHoverText 0.8s forwards;
+}
+
+
+.profile:hover{
+    animation: fadeHoverText 0.8s forwards;
+}
+
+@keyframes fadeHoverText{
+    from{
+        color: #fafafa;
+    }
+
+    to{
+        color: rgba(29, 161, 242, 1);
+    }
+}
+
+@keyframes fadeBorder{
+    from{
+        border-color: rgba(21, 32, 43, 0.5);
+        box-shadow: 0;
+    }
+
+    to{
+        border-color: rgba(29, 161, 242, 0.5);
+        box-shadow: 0 5px rgba(29, 161, 242, 0.3), 0 10px rgba(29, 161, 242, 0.25),
+              0 15px rgba(29, 161, 242, 0.2), 0 20px rgba(29, 161, 242, 0.1),
+              0 25px rgba(29, 161, 242, 0.05),
+              -5px 5px 40px rgba(29, 161, 242, 0.4);
+    }
+}
+
+.box-title{
+    margin-top: 10px;
+    font-family: "Archivo", sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+@media (max-width: 1120px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    section{
+        display: block;
+    }
+
+    .programacao{
+        text-align: center;
+    }
+
+    .profile-img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .grid-content{
+        text-align: center;
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,273 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+}
+
+section{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    background-color: rgba(29, 161, 242, 0.08);
+}
+
+.programacao{
+    color: #fafafa;
+    width: 0px;
+    height: 0px;
+}
+
+.programacao:hover{
+    animation: fadeHoverText 0.8s forwards;
+}
+
+@keyframes fadeHoverText{
+    from{
+        color: #fafafa;
+    }
+
+    to{
+        color: rgba(29, 161, 242, 1);
+    }
+}
+
+.grid-content{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 70px;
+}
+
+.box{
+    width: 300px;
+    height: 200px;
+    background-color: #f7f7f7;
+    border-radius: 3px;
+    border-color: rgba(21, 32, 43, 0.08);
+    border-width: 3px;
+    border-style: solid;
+    text-align: center;
+    box-shadow: 7px 7px 20px 0px rgba(29, 161, 242, 0.2);
+}
+
+.box-title{
+    margin-top: 5px;
+    font-family: "Archivo", sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+@keyframes fadeBorder{
+    from{
+        border-color: rgba(21, 32, 43, 0.5);
+        box-shadow: 0;
+    }
+
+    to{
+        border-color: rgba(29, 161, 242, 0.5);
+        box-shadow: 0 5px rgba(29, 161, 242, 0.3), 0 10px rgba(29, 161, 242, 0.25),
+              0 15px rgba(29, 161, 242, 0.2), 0 20px rgba(29, 161, 242, 0.1),
+              0 25px rgba(29, 161, 242, 0.05),
+              -5px 5px 40px rgba(29, 161, 242, 0.4);
+    }
+}
+
+.box:hover{
+    animation: fadeBorder 0.6s forwards;
+}
+
+.logos{
+    width: 70px;
+    height: 70px;
+    margin-top: 35px;
+}
+
+.git-progress {
+    margin-top: 20px;
+    border-radius: 10px; 
+    width: 80%;
+    height: 10px;
+}
+
+.git-progress::-webkit-progress-bar {
+    background-color: #dbdbdb;
+    border-radius: 10px;
+}
+
+.git-progress::-webkit-progress-value {
+    border-radius: 10px;
+    background-color: rgba(29, 161, 242, 1);
+}
+
+.js-progress {
+    margin-top: 20px;
+    border-radius: 10px; 
+    width: 80%;
+    height: 10px;
+}
+
+.js-progress::-webkit-progress-bar {
+    background-color: #dbdbdb;
+    border-radius: 10px;
+}
+
+.js-progress::-webkit-progress-value {
+    border-radius: 10px;
+    background-color: rgba(29, 161, 242, 1);
+}
+
+.react-progress {
+    margin-top: 20px;
+    border-radius: 10px; 
+    width: 80%;
+    height: 10px;
+}
+
+.react-progress::-webkit-progress-bar {
+    background-color: #dbdbdb;
+    border-radius: 10px;
+}
+
+.react-progress::-webkit-progress-value {
+    border-radius: 10px;
+    background-color: rgba(29, 161, 242, 1);
+}
+
+.node-progress {
+    margin-top: 20px;
+    border-radius: 10px; 
+    width: 80%;
+    height: 10px;
+}
+
+.node-progress::-webkit-progress-bar {
+    background-color: #dbdbdb;
+    border-radius: 10px;
+}
+
+.node-progress::-webkit-progress-value {
+    border-radius: 10px;
+    background-color: rgba(29, 161, 242, 1);
+}
+
+.java-progress {
+    margin-top: 20px;
+    border-radius: 10px; 
+    width: 80%;
+    height: 10px;
+}
+
+.java-progress::-webkit-progress-bar {
+    background-color: #dbdbdb;
+    border-radius: 10px;
+}
+
+.java-progress::-webkit-progress-value {
+    border-radius: 10px;
+    background-color: rgba(29, 161, 242, 1);
+}
+
+.python-progress {
+    margin-top: 20px;
+    border-radius: 10px; 
+    width: 80%;
+    height: 10px;
+}
+
+.python-progress::-webkit-progress-bar {
+    background-color: #dbdbdb;
+    border-radius: 10px;
+}
+
+.python-progress::-webkit-progress-value {
+    border-radius: 10px;
+    background-color: rgba(29, 161, 242, 1);
+}
+
+.arduino-progress {
+    margin-top: 20px;
+    border-radius: 10px; 
+    width: 80%;
+    height: 10px;
+}
+
+.arduino-progress::-webkit-progress-bar {
+    background-color: #dbdbdb;
+    border-radius: 10px;
+}
+
+.arduino-progress::-webkit-progress-value {
+    border-radius: 10px;
+    background-color: rgba(29, 161, 242, 1);
+}
+
+.css-progress {
+    margin-top: 20px;
+    border-radius: 10px; 
+    width: 80%;
+    height: 10px;
+}
+
+.css-progress::-webkit-progress-bar {
+    background-color: #dbdbdb;
+    border-radius: 10px;
+}
+
+.css-progress::-webkit-progress-value {
+    border-radius: 10px;
+    background-color: rgba(29, 161, 242, 1);
+}
+
+.html-progress {
+    margin-top: 20px;
+    border-radius: 10px; 
+    width: 80%;
+    height: 10px;
+}
+
+.html-progress::-webkit-progress-bar {
+    background-color: #dbdbdb;
+    border-radius: 10px;
+}
+
+.html-progress::-webkit-progress-value {
+    border-radius: 10px;
+    background-color: rgba(29, 161, 242, 1);
+}
+
+.jupyter-progress {
+    margin-top: 20px;
+    border-radius: 10px; 
+    width: 80%;
+    height: 10px;
+}
+
+.jupyter-progress::-webkit-progress-bar {
+    background-color: #dbdbdb;
+    border-radius: 10px;
+}
+
+.jupyter-progress::-webkit-progress-value {
+    border-radius: 10px;
+    background-color: rgba(29, 161, 242, 1);
+}
+
+@media (max-width: 1120px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    section{
+        display: block;
+    }
+
+    .programacao{
+        text-align: center;
+    }
+    
+    .grid-content{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+}
