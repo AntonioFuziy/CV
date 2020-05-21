@@ -7,6 +7,21 @@
     box-sizing: border-box;
 }
 
+@keyframes fadeOnLoad{
+    from{
+        opacity: 0.4;
+        transform: translateY(-40%);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.grid-content{
+    animation: fadeOnLoad, 0.8s, forwards;
+}
 
 @media (max-width: 1349px){
     *{
@@ -50,7 +65,54 @@
     }
     
     .grid-content{
-        
+        text-align: center;
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 450px){
+    *{
+        margin: 0;
+        padding: 0;
+        outline: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    section{
+        display: block;
+    }
+
+    .programacao{
+        margin-left: 20px;
+    }
+
+    .experience{
+        margin-left: 20px;
+    }
+
+    .others{
+        margin-left: 20px;
+    }
+
+    .linguas{
+        margin-left: 20px;
+    }
+
+    .profile{
+        margin-left: 20px;
+    }
+
+    .description{
+        display: none;
+    }
+    
+    .grid-content{
         text-align: center;
         width: 100%;
         grid-template-columns: 1fr;
